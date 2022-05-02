@@ -9,15 +9,15 @@ M.ui = {
    theme = "night-owl",
 }
 
-local userPlugings = require("custom.plugins")
+local userPlugings = require "custom.plugins"
 
 M.plugins = {
-  install = userPlugings,
   options = {
     lspconfig = {
       setup_lspconf = "custom.plugin_confs.lsp"
     }
-  }
+  },
+  user = userPlugings,
 }
 
 return M

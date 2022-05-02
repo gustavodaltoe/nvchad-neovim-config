@@ -4,6 +4,7 @@ M.setup_lsp = function(attach, capabilities)
   local lsp_installer = require("nvim-lsp-installer")
 
   lsp_installer.settings {
+      automatic_installation = true,
       ui = {
          icons = {
             server_installed = "﫟" ,
